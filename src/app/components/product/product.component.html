@@ -1,0 +1,23 @@
+<div class="container">
+<table class="table mt-5">
+    <thead>
+      <tr>
+        <th scope="col">Sr.No</th>
+        <th scope="col">Name</th>
+        <th scope="col">See Deatils</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of product">
+      <tr>
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.p_name}}</td>
+        <td><button class="btn btn-sm btn-primary" (click)="seeDetails(item.id)">Details</button></td>
+      </tr>
+
+    
+    </tbody>
+  </table>
+</div>
+<router-outlet></router-outlet>
+
+
